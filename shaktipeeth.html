@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>51 Shaktipeeth — List, Ang/Aabhushan, Devi &amp; Bhairav | Mandir Directory</title>
+<meta name="description" content="Sabhi 51 Shaktipeeth ki list — sthaan, Maa Sati ka ang ya aabhushan, Shakti (Devi) aur Bhairav ke naam. Saath mein Kamakhya, Vaishno Devi, Vindhyachal, Kalighat, Dakshineswar aur Maihar Devi ki jaankari.">
+<meta name="keywords" content="51 Shaktipeeth, Shakti Peeth list, Kamakhya, Vaishno Devi, Vindhyachal, Kalighat, Dakshineswar, Maihar Devi, Bhairav, Sati ang">
+<meta name="theme-color" content="#5a0e1c">
+<link rel="canonical" href="https://example.com/shaktipeeth.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .sp-tools{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+  .sp-tools input,.sp-tools select{padding:12px 16px;border-radius:999px;border:1px solid rgba(233,185,73,.7);background:#fff;font-family:var(--font-body);font-size:.95rem;color:var(--ink)}
+  .sp-tools input{flex:1;min-width:220px}
+</style>
+</head>
+<body>
+
+<div class="topbar"><span class="hi">॥ ॐ शक्तिरूपायै नमः ॥</span> &nbsp;•&nbsp; Jahan-jahan Maa ka ang gira, wahan shakti ka vaas</div>
+
+<header class="site">
+  <div class="navwrap">
+    <a class="brand" href="index.html"><img class="mark" src="assets/img/logo.svg" alt="logo"><span>Navratri Bhakti<small class="hi">माँ दुर्गा साधना</small></span></a>
+    <nav class="main" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="navratri.html">Navratri</a>
+      <a href="navadurga.html">9 Roop</a>
+      <a href="stotram.html">Aarti &amp; Stotram</a>
+      <a href="shaktipeeth.html" class="active">51 Shaktipeeth</a>
+      <a href="puja-vidhi.html">Puja Vidhi</a>
+      <a href="interactive.html">Interactive</a>
+    </nav>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a> › 51 Shaktipeeth</div>
+    <h1>51 Shaktipeeth &amp; Mandir Directory<span class="hi">५१ शक्तिपीठ और प्रमुख मंदिर</span></h1>
+    <p>Pauranik manyata ke anusaar, Daksh-yagya ke baad Sati ne deh tyaag diya. Bhagwan Vishnu ne Sudarshan Chakra se unke sharir ko vibhajit kiya, aur jahan-jahan unka ang ya aabhushan gira, wahan Shaktipeeth sthapit hue. Har peeth mein Devi ki ek swaroop aur unke saath Bhairav (Shiv ka swaroop) virajit hain.</p>
+  </div>
+</section>
+
+<!-- Map -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow hi">॥ भू-दर्शन ॥</span>
+      <h2>Shaktipeeth Map</h2>
+      <p>Bharat aur aas-paas ke deshon mein sthit peethon ka naksha.</p>
+    </div>
+    <div class="map-shell">
+      <iframe title="Shaktipeeth Map" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=66.0%2C6.0%2C98.0%2C36.5&layer=mapnik"></iframe>
+    </div>
+    <p class="note-card" style="margin-top:14px">Interactive map ke liye OpenStreetMap embed istemal kiya gaya hai. Har peeth ka exact coordinate add karne ke liye neeche di gayi list ke saath apna marker daal sakte hain.</p>
+  </div>
+</section>
+
+<!-- List -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow hi">॥ शक्तिपीठ सूची ॥</span>
+      <h2>Poore 51 Shaktipeeth</h2>
+      <p>Naam se search karein ya desh ke hisaab se filter karein.</p>
+    </div>
+    <div class="sp-tools">
+      <input id="spSearch" type="search" placeholder="Peeth, sthaan, Devi ya Bhairav se khojein…" aria-label="Search">
+      <select id="spFilter" aria-label="Country filter">
+        <option value="">Sabhi Desh</option>
+        <option value="India">Bharat</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Tibet">Tibet</option>
+      </select>
+    </div>
+    <div id="shaktiTable" class="tablewrap"></div>
+    <p class="note-card" style="margin-top:14px">Sroton mein peethon ke naam, ang/aabhushan aur Bhairav ke naam mein thoda matbhed milta hai — yahan sarvadhik prachalit manyata di gayi hai.</p>
+  </div>
+</section>
+
+<!-- Mandir directory -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow hi">॥ प्रमुख मंदिर ॥</span>
+      <h2>Famous Mandir Directory</h2>
+      <p>Pramukh Devi-mandir — itihas aur darshan ki jaankari.</p>
+    </div>
+    <div id="mandirGrid" class="grid cols-2"></div>
+  </div>
+</section>
+
+<button id="audioToggle" class="audio-toggle" aria-label="Aarti chalao ya band karein">
+  <span class="wave"><i></i><i></i><i></i><i></i></span><span class="label">Aarti / Stotram Chalao</span>
+</button>
+
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div><h4>Navratri Bhakti</h4><p>51 Shaktipeeth aur pramukh Devi-mandiron ki sampoorn jaankari.</p><p class="omline">॥ जय माता दी ॥</p></div>
+      <div><h4>Pages</h4><p><a href="navratri.html">Navratri &amp; Significance</a><br><a href="navadurga.html">Navadurga — 9 Roop</a><br><a href="stotram.html">Stotram &amp; Aarti Hub</a><br><a href="shaktipeeth.html">51 Shaktipeeth</a></p></div>
+      <div><h4>Bhakti</h4><p><a href="puja-vidhi.html">Puja Vidhi &amp; Samagri</a><br><a href="interactive.html">Virtual Diya &amp; Bell</a><br><a href="interactive.html#wall">Devotee Wall</a><br><a href="interactive.html#wallpapers">Wallpapers</a></p></div>
+      <div><h4>Aaj ka Sandesh</h4><p class="hi" style="color:#ffe0b8">"जय माता दी"</p><p><a href="index.html#countdown-sec">Countdown →</a></p></div>
+    </div>
+    <div class="foot-bottom">© 2026 Navratri Bhakti · Shraddha-bhav se banaya gaya · <a href="sitemap.xml">Sitemap</a></div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

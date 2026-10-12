@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Durga Aarti, Stotram &amp; Chalisa — Lyrics, Audio &amp; PDF Download</title>
+<meta name="description" content="Mahishasura Mardini Stotram, Durga Chalisa, Argala Stotram, Siddha Kunjika Stotram, Durga Saptashati aur Devi Kavacham — lyrics, synchronized audio aur high-quality PDF downloads.">
+<meta name="keywords" content="Mahishasura Mardini Stotram, Durga Chalisa, Argala Stotram, Siddha Kunjika Stotram, Durga Saptashati, Devi Kavacham, Durga Aarti, PDF download">
+<meta name="theme-color" content="#5a0e1c">
+<link rel="canonical" href="https://example.com/stotram.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .lyrics-panel{background:linear-gradient(150deg,#2a0512,#5a0e1c);border-radius:24px;padding:30px;color:#fff3e0;border:1px solid rgba(233,185,73,.4)}
+  .lyrics-panel .ln{font-family:var(--font-hi);font-size:1.15rem;padding:8px 14px;border-radius:10px;transition:.3s;color:#ffe0b8;opacity:.7}
+  .lyrics-panel .ln.active{background:rgba(233,185,73,.18);color:#fff;opacity:1;transform:translateX(6px)}
+  .lyrics-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+  .pdf-card{display:flex;gap:16px;align-items:center}
+  .pdf-card .pdficon{font-size:2.4rem}
+</style>
+</head>
+<body>
+
+<div class="topbar"><span class="hi">॥ ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे ॥</span> &nbsp;•&nbsp; Stotram path se Maa ki kripa</div>
+
+<header class="site">
+  <div class="navwrap">
+    <a class="brand" href="index.html"><img class="mark" src="assets/img/logo.svg" alt="logo"><span>Navratri Bhakti<small class="hi">माँ दुर्गा साधना</small></span></a>
+    <nav class="main" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="navratri.html">Navratri</a>
+      <a href="navadurga.html">9 Roop</a>
+      <a href="stotram.html" class="active">Aarti &amp; Stotram</a>
+      <a href="shaktipeeth.html">51 Shaktipeeth</a>
+      <a href="puja-vidhi.html">Puja Vidhi</a>
+      <a href="interactive.html">Interactive</a>
+    </nav>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a> › Stotram, Aarti &amp; Mantra Hub</div>
+    <h1>Stotram, Aarti &amp; Mantra Hub<span class="hi">स्तोत्र, आरती और मंत्र संग्रह</span></h1>
+    <p>Navratri aur Durga-puja mein path kiye jaane wale pramukh stotram, chalisa aur mantra — ek jagah. Neeche lyrics reader se path karein, ambient aarti chalaayein, aur puja-path ke liye PDF booklet download karein.</p>
+  </div>
+</section>
+
+<!-- Stotram grid -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow hi">॥ प्रमुख स्तोत्र ॥</span>
+      <h2>Important Stotrams &amp; Chalisas</h2>
+      <p>Har stotram ka parichay, mahatva aur aarambhik paath.</p>
+    </div>
+    <div id="stotramGrid" class="grid cols-2"></div>
+  </div>
+</section>
+
+<!-- Lyrics reader -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow hi">॥ पाठ सहायक ॥</span>
+      <h2>Lyrics Reader — Audio ke Saath Path</h2>
+      <p>Path-shuru karein: audio on karein aur ek-ek line highlight hoti jaayegi. Yeh abhyaas (practice) ke liye ek sahayak hai — asli recording ke liye neeche dekhein.</p>
+    </div>
+    <div class="lyrics-panel">
+      <div class="lyrics-controls">
+        <button class="btn btn-primary" id="lyricsPlay">▶ Path Shuru Karein</button>
+        <button class="btn btn-ghost" id="lyricsStop">⏸ Rok Dein</button>
+        <select id="lyricsPick" style="padding:10px 14px;border-radius:999px;border:1px solid var(--gold);background:#fff;color:var(--maroon);font-family:var(--font-body);font-weight:600"></select>
+      </div>
+      <div id="lyricsBody"></div>
+    </div>
+    <p class="note-card" style="margin-top:16px">Dhyan dein: yahan diya gaya audio ek soft instrumental (tanpura aur ghanti) hai, jo offline bhi chalta hai. Asli gaayi hui aarti/stotram recording ke liye aap apni pasand ki audio file <code>assets/audio/</code> folder mein daal kar player se jod sakte hain.</p>
+  </div>
+</section>
+
+<!-- PDF downloads -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow hi">॥ पाठ सामग्री ॥</span>
+      <h2>PDF Downloads</h2>
+      <p>Puja-path ke liye high-quality downloadable booklets — print karke path kar sakte hain.</p>
+    </div>
+    <div class="grid cols-3">
+      <article class="card pdf-card"><span class="pdficon">📕</span><div><h3>Durga Saptashloki</h3><p>Durga Saptashati ke 7 mukhya shlok — Sanskrit, Hindi aur English arth ke saath.</p><a class="btn btn-solid" href="assets/pdf/Durga_Saptashloki.pdf" download>Download PDF</a></div></article>
+      <article class="card pdf-card"><span class="pdficon">📗</span><div><h3>Navratri Puja Vidhi &amp; Samagri</h3><p>Ghatasthapana vidhi, samagri checklist, Kanya Pujan aur Hawan guide.</p><a class="btn btn-solid" href="assets/pdf/Navratri_Puja_Vidhi_Samagri.pdf" download>Download PDF</a></div></article>
+      <article class="card pdf-card"><span class="pdficon">📘</span><div><h3>51 Shaktipeeth List</h3><p>Sabhi 51 Shaktipeeth — sthaan, ang/aabhushan, Devi aur Bhairav ke saath.</p><a class="btn btn-solid" href="assets/pdf/51_Shaktipeeth_List.pdf" download>Download PDF</a></div></article>
+    </div>
+  </div>
+</section>
+
+<button id="audioToggle" class="audio-toggle" aria-label="Aarti chalao ya band karein">
+  <span class="wave"><i></i><i></i><i></i><i></i></span><span class="label">Aarti / Stotram Chalao</span>
+</button>
+
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div><h4>Navratri Bhakti</h4><p>Stotram, aarti aur mantra — shraddha se path karne ke liye.</p><p class="omline">॥ जय माता दी ॥</p></div>
+      <div><h4>Pages</h4><p><a href="navratri.html">Navratri &amp; Significance</a><br><a href="navadurga.html">Navadurga — 9 Roop</a><br><a href="stotram.html">Stotram &amp; Aarti Hub</a><br><a href="shaktipeeth.html">51 Shaktipeeth</a></p></div>
+      <div><h4>Bhakti</h4><p><a href="puja-vidhi.html">Puja Vidhi &amp; Samagri</a><br><a href="interactive.html">Virtual Diya &amp; Bell</a><br><a href="interactive.html#wall">Devotee Wall</a><br><a href="interactive.html#wallpapers">Wallpapers</a></p></div>
+      <div><h4>Aaj ka Sandesh</h4><p class="hi" style="color:#ffe0b8">"जय माता दी"</p><p><a href="index.html#countdown-sec">Countdown →</a></p></div>
+    </div>
+    <div class="foot-bottom">© 2026 Navratri Bhakti · Shraddha-bhav se banaya gaya · <a href="sitemap.xml">Sitemap</a></div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function(){
+  var LYRICS = {
+    "Mahishasura Mardini Stotram": [
+      "अयि गिरिनन्दिनि नन्दितमेदिनि विश्वविनोदिनि नन्दनुते",
+      "गिरिवरविन्ध्यशिरोधिनिवासिनि विष्णुविलासिनि जिष्णुनुते",
+      "भगवति हे शितिकण्ठकुटुम्बिनि भूरिकुटुम्बिनि भूरिकृते",
+      "जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते"
+    ],
+    "Navarna Mantra (108 Jaap)": [
+      "ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे",
+      "ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे",
+      "ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे",
+      "ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे"
+    ],
+    "Durga Saptashloki": [
+      "सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके।",
+      "शरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते॥",
+      "दुर्गे स्मृता हरसि भीतिमशेषजन्तोः",
+      "स्वस्थैः स्मृता मतिमतीव शुभां ददासि॥"
+    ],
+    "Devi Stuti (Ya Devi Sarvabhuteshu)": [
+      "या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता।",
+      "नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥",
+      "या देवी सर्वभूतेषु मातृरूपेण संस्थिता।",
+      "नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥"
+    ]
+  };
+  var pick = document.getElementById("lyricsPick");
+  var body = document.getElementById("lyricsBody");
+  var play = document.getElementById("lyricsPlay");
+  var stop = document.getElementById("lyricsStop");
+  var timer = null, idx = 0, lines = [];
+  if(!pick) return;
+  Object.keys(LYRICS).forEach(function(k){ var o=document.createElement("option"); o.value=k; o.textContent=k; pick.appendChild(o); });
+  function render(){
+    lines = LYRICS[pick.value] || [];
+    body.innerHTML = lines.map(function(l,i){ return '<div class="ln" data-i="'+i+'">'+l+'</div>'; }).join("");
+    idx = 0; highlight();
+  }
+  function highlight(){
+    body.querySelectorAll(".ln").forEach(function(el){ el.classList.toggle("active", +el.dataset.i === idx); });
+  }
+  play.addEventListener("click", function(){
+    // turn ambient audio on
+    var at = document.getElementById("audioToggle");
+    if(at && !at.classList.contains("playing")) at.click();
+    clearInterval(timer);
+    timer = setInterval(function(){ idx = (idx+1) % lines.length; highlight(); }, 2600);
+  });
+  stop.addEventListener("click", function(){ clearInterval(timer); timer=null; });
+  pick.addEventListener("change", function(){ clearInterval(timer); render(); });
+  render();
+})();
+</script>
+</body>
+</html>
